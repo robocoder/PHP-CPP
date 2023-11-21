@@ -3,7 +3,6 @@ B0RKED = \
 	CppClassesInPhp \
 	DlUnrestricted \
 	EmptyExtension \
-	Globals \
 	ReturnObject \
 	simple
 
@@ -15,7 +14,8 @@ EXAMPLES = \
 	FunctionNoParameters \
 	FunctionReturnValue \
 	FunctionVoid \
-	FunctionWithParameters
+	FunctionWithParameters \
+	Globals
 
 .PHONY: all clean $(EXAMPLES)
 

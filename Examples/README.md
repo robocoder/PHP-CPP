@@ -152,3 +152,14 @@ The following examples are available:
     
     Functions and/or classes defined in this example.
         - Php::Value call_php_function(Php::Parameters &params)
+
+
+### [Globals](https://github.com/EmielBruijntjes/PHP-CPP/tree/master/Examples/Globals)
+
+    The eighth example demonstrates how global PHP variables can be
+    accessed from your C++ code. You can do this by accessing the
+    Php::values array, which more or less behaves the same as the
+    $_GLOBALS array does in PHP.
+
+    Functions and/or classes defined in this example.
+        1. void process_globals()

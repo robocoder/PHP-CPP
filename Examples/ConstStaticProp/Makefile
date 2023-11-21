@@ -1,4 +1,4 @@
-NAME           = callphpfunction
+NAME           = conststaticprop
 
 PHP_CONFIG     = php-config
 

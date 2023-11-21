@@ -2,7 +2,7 @@
 
 /**
   *  For functionality testing. You can then delete.
-  *  
+  *
   */
 
 class cl0 {
@@ -15,26 +15,26 @@ class cl0 {
 class cl1 extends cl0  implements arrayaccess
 {
     static $cl1_static = 'static prop';
-    
+
     const  CL1_CONST   = 'const prop';
-    
+
     public $cl1_num   = 45615;
     public $cl1_str   = "Public Prop";
-    
+
     private $cl1_pp1   = "Private Prop1";
     private $cl1_pp2   = "Private Prop2";
-    
+
     protected $cl1_prp1   = "Protected Prop1";
     protected $cl1_prp2   = "Protected Prop2";
-    
+
     public function fn($a) {
         echo $a;
     }
-    
+
     function __toString() {
         return 'I\'m class cl1';
     }
-    
+
     public function offsetSet($offset, $value) {
         if (!is_null($offset)) {
             $this->$offset = $value;
@@ -49,7 +49,7 @@ class cl1 extends cl0  implements arrayaccess
     public function offsetGet($offset) {
         return isset($this->$offset) ? $this->$offset : null;
     }
-    
+
 }
 
 class emptyClass {}
@@ -83,4 +83,3 @@ var_export($arr);
 // Works for objects and arrays
 $q->loopObject($arr);
 //$q->loopObject($arr);
-

@@ -1,8 +1,8 @@
 /**
  *  Master.h
- * 
+ *
  *  Class that is exported to PHP space
- * 
+ *
  *  @author Emiel Bruijntjes <emiel.bruijntjes@copernica.com>
  *  @copyright 2015 Copernica BV
  */
@@ -33,17 +33,17 @@ public:
     /**
      *  Constructor
      */
-    Master() 
+    Master()
     {
         // create a child instance
         _value = Php::Object("Child", new Child());
     }
-    
+
     /**
      *  Destructor
      */
     virtual ~Master() {}
-    
+
     /**
      *  Retrieve the child
      *  @return Php::Value
@@ -52,7 +52,7 @@ public:
     {
         return _value;
     }
-    
+
     /**
      *  Cast to a string
      *  @return const char *

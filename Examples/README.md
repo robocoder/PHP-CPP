@@ -111,36 +111,31 @@ The following examples are available:
         5. void my_with_defined_object_parameters_function(Php::Parameters &params)
 
 
-### [Globals](https://github.com/EmielBruijntjes/PHP-CPP/tree/master/Examples/Globals)
-
-    Global PHP variables can be used accessed from your C++ code. You
-    can do this by accessing the Php::values array, which more or less
-    behaves the same as the $_GLOBALS array does in PHP.
-
-    Functions and/or classes defined in this example.
-        1. void process_globals()
-
-
-### [Exceptions](https://github.com/EmielBruijntjes/PHP-CPP/tree/master/Examples/Exceptions)
+### Exceptions
 
     The sixth example is composed of two parts, the throw exception and 
-    the catch exception examples. The requirements of the catch example,
-    passing a callback as a parameter, have not yet been implemented. 
+    the catch exception examples.
     
+#### [Exception Throw](https://github.com/EmielBruijntjes/PHP-CPP/tree/master/Examples/ExceptionThrow)
+
     The throw example is there to show that an exception thrown in
     a C++ function can be caught and handled in your PHP script. The 
     exception thrown is a Php::Exception.
     
+    Functions and/or classes defined in this example.
+        - void my_throw_exception_function()
+
+#### [Exception Catch](https://github.com/EmielBruijntjes/PHP-CPP/tree/master/Examples/ExceptionCatch)
+
     The catch example shows that when a PHP function is passed as a 
     callback, and is capable of throwing a (PHP) exception, that it
     can be caught as Php::Exception and then handled in the C++ code. 
     However, the passing of a function as a callback has not yet been 
     implemented. It would need to be implemented for this specific 
     example to work.
-    
+
     Functions and/or classes defined in this example.
         - void my_catch_exception_function(Php::Parameters &params)
-        - void my_throw_exception_function()
 
 
 ### [PHP function calls](https://github.com/EmielBruijntjes/PHP-CPP/tree/master/Examples/CallPhpFunctions)
@@ -157,4 +152,3 @@ The following examples are available:
     
     Functions and/or classes defined in this example.
         - Php::Value call_php_function(Php::Parameters &params)
-

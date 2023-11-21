@@ -5,7 +5,7 @@
  *  An example file to show the working of using a C++ class in PHP.
  */
 
-#include "mytestext.h"
+#include "conststaticprop.h"
 /**
  *  Namespace to use
  */
@@ -32,7 +32,7 @@ extern "C"
     PHPCPP_EXPORT void *get_module()
     {
         // create extension
-        static Php::Extension extension("my_test_ext","0.1a");
+        static Php::Extension extension("my_const_static_prop", "0.1a");
 
         // add the custom class ot the extension
         extension.add(

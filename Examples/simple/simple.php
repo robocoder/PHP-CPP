@@ -40,9 +40,9 @@ function slowsort($input)
         for ($j=$i+1; $j<$size; $j++)
         {
             $right = $input[$j];
-            
+
             if ($left < $right) continue;
-            
+
             // swap values
             $input[$i] = $right;
             $input[$j] = $left;
@@ -61,10 +61,10 @@ function slowsort($input)
 //        echo($this->a."\n");
 //        echo($this->b."\n");
 //        echo("hoi\n");
-//        
+//
 //        parent::myMethod($val);
 //    }
-//    
+//
 //}
 //
 //$x = new my_extended_class();

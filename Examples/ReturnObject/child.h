@@ -1,8 +1,8 @@
 /**
  *  Child.h
- * 
+ *
  *  Class that is exported to PHP space
- * 
+ *
  *  @author Emiel Bruijntjes <emiel.bruijntjes@copernica.com>
  *  @copyright 2015 Copernica BV
  */
@@ -23,7 +23,7 @@ public:
      */
     Child() {}
     virtual ~Child() {}
-    
+
     /**
      *  Cast to a string
      *  @return const char *

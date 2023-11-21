@@ -1,11 +1,11 @@
 /**
  *	The includes.h
  */
- 
+
 /**
  * 	Default Cpp libraries
  */
- 
+
 #include <string>
 #include <iostream>
 

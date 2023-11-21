@@ -1,4 +1,4 @@
-NAME           = callphpfunction
+NAME           = exceptioncatch
 
 PHP_CONFIG     = php-config
 

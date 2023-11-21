@@ -2,7 +2,7 @@
 /**
  *  callphpfunction.php
  *  @author Jasper van Eck<jasper.vaneck@copernica.com>
- * 
+ *
  *  An example file to show the working of a php function call in C++.
  */
 
@@ -27,7 +27,7 @@ function myFunction($a,$b,$c)
 echo(call_php_function(function($a, $b, $c){
                                 return $a + $b + $c;
                             })."\n");
-                            
+
 echo(call_php_function("myFunction")."\n");
-                            
+
 echo(call_php_function(array(new MyClass(), 'method'))."\n");

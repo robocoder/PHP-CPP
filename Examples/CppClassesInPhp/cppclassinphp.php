@@ -2,21 +2,21 @@
 /**
  *  cppclassinphp.php
  *  @author Jasper van Eck<jasper.vaneck@copernica.com>
- * 
+ *
  *  An example file to show the working of using a C++ class in PHP.
  */
 
 class TestClass
 {
     public $x = 1223;
-    
+
     public function __construct()
     {
         echo("TestClass::__construct\n");
     }
-    
+
 }
- 
+
 //create a MyCustomClass object, which is an object of a C++ class
 $object1 = new MyClass();
 

@@ -6,7 +6,7 @@
  *  An example file to show the working of a php function call in C++.
  */
 
-class MyClass
+class MyCPFClass
 {
     function method($a,$b,$c)
     {
@@ -30,4 +30,4 @@ echo(call_php_function(function($a, $b, $c){
 
 echo(call_php_function("myFunction")."\n");
 
-echo(call_php_function(array(new MyClass(), 'method'))."\n");
+echo(call_php_function(array(new MyCPFClass(), 'method'))."\n");

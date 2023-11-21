@@ -4,13 +4,13 @@
 //{
 //    public function __toString()
 //    {
-//        return "MyClass";
+//        return "MySimpleClass";
 //    }
 //}
 //
 //$myvar = "hoi";
 //
-//class MyClass {
+//class MySimpleClass {
 //
 //    public function __toString()
 //    {
@@ -21,7 +21,7 @@
 //$g1 = 123;
 //$g2 = "abc";
 //
-//$result = my_plus(new MyClass(), array(), new MyClass(), $myvar, "blabla", new XXX());
+//$result = my_plus(new MySimpleClass(), array(), new MySimpleClass(), $myvar, "blabla", new XXX());
 //
 //echo("myvar = $myvar\n");
 //

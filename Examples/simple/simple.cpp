@@ -163,7 +163,7 @@ extern "C"
         extension.add<my_plus>("my_plus", {
             Php::ByVal("a", Php::Type::Numeric),
             Php::ByVal("b", Php::Type::Numeric),
-            Php::ByVal("c", "MyClass"),
+            Php::ByVal("c", "MySimpleClass"),
             Php::ByRef("d", Php::Type::String)
         });
 

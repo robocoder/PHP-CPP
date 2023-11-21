@@ -24,7 +24,6 @@ public:
 };
 
 
-
 // Symbols are exported according to the "C" language
 extern "C"
 {
@@ -34,19 +33,20 @@ extern "C"
         // create extension
         static Php::Extension extension("my_const_static_prop", "0.1a");
 
-        // add the custom class ot the extension
-        extension.add(
-            "MyTestClass",
-            Php::Class<MyTestExt>({
+        // we are going to define a class
+        Php::Class<MyTestExt> myTestExt("MyTestClass");
 
-                // Private PHP constructor! You can't instance object of MyTestClass
-                Php::Private("__construct", Php::Method<MyTestExt>(&MyTestExt::__construct)),
+        // add methods to it
+        myTestExt.method<&MyTestExt::__construct>("__construct", Php::Private);
 
-                Php::Const("version", "v0.01-alpha"),
-                Php::Const("PI", 3.14159265),
-                Php::Const("IMISNULL"),
-            })
-        );
+        // add properties to it
+        myTestExt.property("version", "v0.01-alpha", Php::Const);
+        myTestExt.constant("PI", 3.14159265);
+        myTestExt.add(Php::Constant("IMISNULL"));
+        myTestExt.property("exp", 2.71828182846, Php::Static);
+
+        // add the class to the extension
+        extension.add(myTestExt);
 
         // return the extension module
         return extension.module();

@@ -12,4 +12,4 @@
       *  Fatal error!
       *  Private PHP constructor. You can't instance object of MyTestClass.
       */
-    //$mytest = new MyTestClass();
+    $mytest = new MyTestClass();
